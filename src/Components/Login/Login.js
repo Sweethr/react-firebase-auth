@@ -49,18 +49,12 @@ export default function Register() {
     <Container>
       <div className='flex justify-center items-center h-full'>
         <div className='px-6 py-2 border-2 border-purple-700 rounded-xl text-white w-64'>
-          <h1 className='text-xl font-semibold text-center'>Login</h1>
-          <form className='flex flex-col'>
-            <div className='flex flex-col my-2 gap-y-2'>
-              <span className='text-start text-base font-semibold'>E-Posta</span>
-              <input type="email" name='email' placeholder='E-Mail' className='p-1 outline-none bg-transparent border border-purple-700 rounded-xl' onChange={inputHandle} />
-            </div>
-            <div className='flex flex-col my-2 gap-y-2'>
-              <span className='text-start text-base font-semibold'>Parola</span>
-              <input type="password" name='password' placeholder='Password' className='p-1 outline-none bg-transparent border border-purple-700 rounded-xl' onChange={inputHandle} />
-            </div>
+          <h1 className='text-xl font-semibold text-center my-3'>Login</h1>
+          <form className='flex flex-col gap-y-2'>
+              <input type="email" name='email' placeholder='E-Mail' className='p-1 outline-none bg-transparent border border-purple-700 rounded-md' onChange={inputHandle} />
+              <input type="password" name='password' placeholder='Password' className='p-1 outline-none bg-transparent border border-purple-700 rounded-md' onChange={inputHandle} />
           </form>
-          <div className='flex flex-col items-center justify-center'>
+          <div className='flex flex-col items-center justify-center my-3'>
             <button onClick={buttonHandle} className='my-2 py-1 px-2 bg-purple-700 font-semibold text-sm rounded-xl'>Gönder</button>
             <span className='mt-1 font-semibold text-sm'>Hesabın yok mu? <Link to="/register" className='text-blue-500'>Kayıt ol!</Link></span>
           </div>
